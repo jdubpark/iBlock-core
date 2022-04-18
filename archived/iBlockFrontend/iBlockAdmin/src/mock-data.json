@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "fullName": "James Smith",
+    "netID": "jsmith2",
+    "uin": "4083781757",
+    "status": "active user"
+  },
+  {
+    "id": 2,
+    "fullName": "Robert Jones",
+    "netID": "rjones5",
+    "uin": "7743226733",
+    "status": "active user"
+  },
+  {
+    "id": 3,
+    "fullName": "Liam Brown",
+    "netID": "lbrown3",
+    "uin": "3055089087",
+    "status": "active user"
+  },
+  {
+    "id": 4,
+    "fullName": "Hannah Davis",
+    "netID": "hdavis6",
+    "uin": "6057681831",
+    "status": "active user"
+  },
+  {
+    "id": 5,
+    "fullName": "Sarah Miller",
+    "netID": "smiller4",
+    "uin": "9517088519",
+    "status": "active user"
+  }
+]

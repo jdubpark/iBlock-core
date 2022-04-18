@@ -1,0 +1,14 @@
+input: .
+output: .retype
+url: # Add your website address here
+branding:
+  title: iBlockCore
+  label: Docs
+  logo: ./assets/block-I-primary.png
+links:
+  text: Getting Started
+  link: https://retype.com/guides/getting-started/
+edit:
+  repo: "https://github.com/uiucdisruptionlab/iBlock-core"
+footer:
+  copyright: "&copy; Copyright {{ year }}. All rights reserved."

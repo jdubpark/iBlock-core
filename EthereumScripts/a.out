@@ -1,0 +1,23 @@
+Binary file .git/objects/pack/pack-385c15c80eab51a62081b86f911f8a25804a72c5.pack matches
+Binary file .git/index matches
+Dockerfile.old:ENTRYPOINT ["/opt/startgeth.sh"]
+LEIAME.md:As a dumb node, the bootnode is a cheap and effective solution to aid the network self-discovery. It fits container-land perfectly, because any swarm can ressurect such a node almost instantly. The main Ethereum network itself is served by a set of bootnodes whose addresses are hard-coded in the "geth" client code.
+README.md:The 'runnode.sh' scripts checks if the node database has already been initilized and runs 'geth init genesis.json' when needed. Similarly, the GEN_CHAIN_ID variable defines the "network_id" of the network. All members of the private network will use the same genesis file.
+README.md:As a dumb node, the bootnode is a cheap and effective solution to aid the network self-discovery. It fits container-land perfectly, because any swarm can ressurect such a node almost instantly. The main Ethereum network itself is served by a set of bootnodes whose addresses are hard-coded in the "geth" client code.
+countpeers.sh:docker exec -ti "$CONTAINER_NAME" geth --exec 'admin.peers.length' attach
+runattach.sh:docker exec -ti "$NODE" geth attach
+runnode.sh:    echo "$DATA_ROOT/keystore not found, running 'geth init'..."
+showpeers.sh:docker exec -ti "$CONTAINER_NAME" geth --exec 'admin.peers' attach
+src/startgeth.sh:  # empty datadir -> geth init
+src/startgeth.sh:      geth --datadir "$DATA_DIR" init /opt/genesis.json
+src/startgeth.sh:echo "Running geth with arguments $GEN_ARGS $@"
+src/startgeth.sh:exec /usr/local/bin/geth $GEN_ARGS "$@"
+Dockerfile:# Until 1.7.2 the public image does NOT contain tools beyond geth,
+Dockerfile:ARG GETH_URL=https://gethstore.blob.core.windows.net/builds/geth-alltools-linux-amd64-1.7.2-1db4ecdc.tar.gz
+Dockerfile:    wget "$GETH_URL" -q -O /tmp/geth-alltools-linux-amd64.tar.gz && \
+Dockerfile:    echo "$GETH_MD5  geth-alltools-linux-amd64.tar.gz" > /tmp/geth-alltools-linux-amd64.tar.gz.md5 && \
+Dockerfile:    md5sum -c /tmp/geth-alltools-linux-amd64.tar.gz.md5 && \
+Dockerfile:    tar -xzf /tmp/geth-alltools-linux-amd64.tar.gz -C /usr/local/bin/ --strip-components=1 && \
+Dockerfile:    rm -f /tmp/geth-alltools-*
+Dockerfile:#CMD ["/opt/startgeth.sh"]
+Dockerfile:ENTRYPOINT ["/opt/startgeth.sh"]

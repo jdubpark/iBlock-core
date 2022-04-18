@@ -1,0 +1,3 @@
+sudo ./bootnode.sh
+sudo docker logs --tail 50 --follow --timestamps bootstrap #view log from the container
+sudo docker container list

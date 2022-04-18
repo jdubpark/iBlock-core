@@ -1,0 +1,25 @@
+{
+  "name": "iblockcore",
+  "version": "1.0.0",
+  "description": "For the instructions: - Website - please navigate to the `website` folder. - Server - please navigate to the `server` folder.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "retype": "retype watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uiucdisruptionlab/iBlock-core.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uiucdisruptionlab/iBlock-core/issues"
+  },
+  "homepage": "https://github.com/uiucdisruptionlab/iBlock-core#readme",
+  "dependencies": {
+    "retypeapp": "^1.11.2"
+  }
+}
